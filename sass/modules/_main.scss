@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #dbcbd9;
+    color: rgb(102, 42, 91);
+    margin: 7em;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+main section {
+    padding: 1em;
+}
+
+#main-headline {
+    text-align: center;
+    margin-bottom: 0.8em;
+}
+
+label {
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+textarea {
+    width: 90%;
+    height: 200px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 1em;
+    padding: 8px 12px;
+    border-radius: 0.5em;
+}
+
+.chat-messages {
+    width: 45%;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: rgba(0, 150, 150, 0.8);
+}
