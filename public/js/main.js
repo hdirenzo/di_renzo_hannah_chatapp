@@ -56,6 +56,8 @@ function showNewMessage({ message }) {
 
 function handleUserTyping(user) {
     console.log('somebody is typing something');
+    debugger
+
 
     if (vm.nickname !== user.currentlytyping.name) {
         vm.notification = `${user.currentlytyping.name} is typing...`
@@ -63,8 +65,12 @@ function handleUserTyping(user) {
 
     // ways to make the message disappear
     // 1. listen for the blur event from the textarea
-    // 2. setTimeout
+    // 2. setTimeou
+
+    // The input will lose focus after 3 seconds
+
 }
+
 
 socket.addEventListener('connected', setUserID);
 socket.addEventListener('new_message', showNewMessage);
