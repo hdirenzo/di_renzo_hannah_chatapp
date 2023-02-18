@@ -1,0 +1,9 @@
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.other-messages {
+    align-items: start;
+}

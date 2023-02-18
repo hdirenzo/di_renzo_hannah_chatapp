@@ -1,4 +1,8 @@
-@import './modules/_reset';
-@import './modules/_vars';
-@import './modules/_main';
-@import './modules/_chatmessage';
+@import './modules/_reset.scss';
+@import './modules/_vars.scss';
+@import './modules/_main.scss';
+@import './modules/_chatmessage.scss';
+
+.hidden {
+    display: none;
+}

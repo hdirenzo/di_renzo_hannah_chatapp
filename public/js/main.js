@@ -25,7 +25,7 @@ const vm = createApp({
             })
 
             this.message = "";
-            this.notification = "Sent!"
+            this.notification = "Sent!";
         },
 
         catchTextFocus() {
@@ -33,6 +33,10 @@ const vm = createApp({
             socket.emit('user_typing', {
                 name: this.nickname || 'anonymous'
             })
+        },
+
+        vanishMessage() {
+            //document.querySelector('#noti').style.display = 'none'
         }
     },
 
@@ -50,13 +54,15 @@ function setUserID({ sID, message }) {
 }
 
 function showNewMessage({ message }) {
-    // debugger;
     vm.messages.push(message);
+
+    scroll();
 }
 
 function handleUserTyping(user) {
     console.log('somebody is typing something');
-    debugger
+    //document.querySelector('#noti').style.display = 'block'
+
 
 
     if (vm.nickname !== user.currentlytyping.name) {
@@ -75,3 +81,10 @@ function handleUserTyping(user) {
 socket.addEventListener('connected', setUserID);
 socket.addEventListener('new_message', showNewMessage);
 socket.addEventListener('typing', handleUserTyping);
+
+
+
+function scroll () {
+    let element = document.querySelector('.messages');
+    element.scrollTop = element.scrollHeight;
+}
