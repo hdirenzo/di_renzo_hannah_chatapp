@@ -1,4 +1,3 @@
-// imports will always go at the top
 import ChatMsg from './components/ChatMessage.js';
 
 const socket = io();
@@ -74,7 +73,7 @@ function handleUserTyping(user) {
     // 2. setTimeou
 
     // The input will lose focus after 3 seconds
-
+    // vm - create app
 }
 
 
@@ -82,9 +81,9 @@ socket.addEventListener('connected', setUserID);
 socket.addEventListener('new_message', showNewMessage);
 socket.addEventListener('typing', handleUserTyping);
 
-
-
-function scroll () {
+/////////////////////////////////////////////////////////////////
+// scroller 
+function scroll() {
     let element = document.querySelector('.messages');
     element.scrollTop = element.scrollHeight;
 }
