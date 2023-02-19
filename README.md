@@ -6,7 +6,7 @@ MMED 5006
 
 Hannah Di Renzo
 
-Used: Javascript, CSS, HTML, SASS, NODE, EXPRESS, SOCKET.IO, VUE
+Used: Javascript, CSS, HTML, SASS, NODE, EXPRESS, SOCKET.IO, VUE, API, NPM
 
 The goal of this application is to allow users to enter a 'nickname', send messages, and be notified when another user is typing, and a message is sent. 
 
